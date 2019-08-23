@@ -31,6 +31,7 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 // When nestedFunction is called, it comes across a reference called internal.
 // It checks for references to internal within its own scope, does not find it,
 // and checks the scope of its parent. It finds the reference there, and uses it.
+// The value of that reference is enclosed within nestedFunction through closure.
 // nestedFunction is able to do this because with nested functions, values can be passed down.
 // However, they cannot be passed upward. So if there was a variable defined within
 // nestedFunction, myFunction would not be able to call it. This is called lexical scope.
