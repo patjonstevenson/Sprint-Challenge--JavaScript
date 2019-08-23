@@ -1,5 +1,6 @@
-// ==== Callbacks ====
 console.log("\n\n+ functions.js +\n\n");
+// ==== Callbacks ====
+console.log("\n+ callbacks +\n\n");
 
 /* Step 1: Create a higher-order function
  * Create a higher-order function named consume with 3 parameters: a, b and cb
@@ -19,12 +20,18 @@ const multiply = (a, b) => a * b;
 const greeting = (first, last) => `Hello ${first} ${last}, nice to meet you`;
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-console.log(consume(2, 2, add)); // 4
-console.log(consume(10, 16, multiply)); // 160
-console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+console.log(`consume(2, 2, add) -> ${consume(2, 2, add)}`); // 4
+console.log(`consume(10, 16, multiply) -> ${consume(10, 16, multiply)}`); // 160
+console.log(
+  `consume("Mary", "Poppins", greeting) -> ${consume(
+    "Mary",
+    "Poppins",
+    greeting
+  )}`
+); // Hello Mary Poppins, nice to meet you!
 
 // ==== Closures ====
-
+console.log("\n+ closures +\n\n");
 // Explain in your own words why nestedfunction can access the variable internal.
 
 // Explanation:

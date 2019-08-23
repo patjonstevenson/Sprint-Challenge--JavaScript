@@ -1,5 +1,6 @@
+console.log("\n+ objects-arrays.js +\n");
 // ==== Objects ====
-console.log("\n\n+ objects-arrays.js +\n\n");
+console.log("\n+ objects +\n\n");
 
 /* 
   Given the following information about dinosaurs, create 3 objects: 
@@ -55,6 +56,7 @@ console.log(`Tyrannosaurus time period: ${tyrannosaurus.period}`);
 console.log(`Tyrannosaurus roar: ${tyrannosaurus.roar()}`);
 
 // ==== Arrays ====
+console.log("\n+ arrays +\n\n");
 
 // Given an array of college graduates.  Complete the following requests using any array method you like
 
@@ -126,6 +128,7 @@ const graduates = [
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
 const universities = graduates.map(grad => grad.university);
+console.log("List of unversities:");
 console.log(universities);
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. This will be an array of strings.
@@ -135,6 +138,7 @@ The resulting contact information strings should have a space between the first 
 
 Log the result of your new array. */
 const contactInfo = graduates.map(grad => `${grad.first_name} ${grad.email}`);
+console.log("Graduate contact info:");
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
@@ -148,6 +152,7 @@ console.log(
 );
 
 // ==== ADVANCED Array Methods ====
+console.log("\n+ advanced array methods +\n\n");
 
 // Given this zoo data from around the United States, follow the instructions below.  Use the specific array methods in the requests below to solve the problems.
 
@@ -225,6 +230,7 @@ zooAnimals.forEach(animal =>
     `Name: ${animal.animal_name}, Scientific: ${animal.scientific_name}`
   )
 );
+console.log("Animal names (common, scientific):");
 console.log(displayNames);
 
 /* Request 2: .map()
@@ -236,6 +242,7 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 const lowCaseAnimalNames = zooAnimals.map(animal =>
   animal.animal_name.toLowerCase()
 );
+console.log("Animal names (common):");
 console.log(lowCaseAnimalNames);
 
 /* Request 3: .filter() 
@@ -244,6 +251,7 @@ The zoos are concerned about animals with a lower population count. Using filter
 
 */
 const lowPopulationAnimals = zooAnimals.filter(animal => animal.population < 5);
+console.log("Animals with populations less than 5:");
 console.log(lowPopulationAnimals);
 
 /* Request 4: .reduce() 
@@ -255,7 +263,7 @@ const populationTotal = zooAnimals.reduce(
   (sum, animal) => sum + animal.population,
   0
 );
-console.log(populationTotal);
+console.log(`Total zoo animal population: ${populationTotal}`);
 
 /*
 
