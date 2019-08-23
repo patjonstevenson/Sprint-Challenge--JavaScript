@@ -45,14 +45,20 @@ A closure occurs when a function is defined within another function, and the nes
 4. Describe the four rules of the 'this' keyword.
 
 1) Global Binding
+   This is used without any local context, so it refers to the window or console.
 
 2) Implicit Binding
+   This is used within an object, so it refers to the object.
 
 3) New Binding
+   This is used within a constructor function, so it refers to the object created by calling the constructor.
 
 4) Explicit Binding
+   This is overridden by .call, .apply, or .bind, so it refers to the object passed to those functions.
 
 5. Why do we need super() in an extended class?
+
+super(), together with extends, links the child class to the parent class, causing the child to inherit properties and methods from the parent class.
 
 ## Project Set up
 
